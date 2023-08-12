@@ -1,0 +1,61 @@
+.navbar {
+  margin: 0px;
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  margin: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.name {
+  font-size: 3rem;
+  letter-spacing: 0.25rem;
+  font-weight: 900;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.header-buttons-div {
+  float: right;
+}
+
+.header-buttons {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.header-button {
+  border: 0px;
+  font-size: 0.8rem;
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+}
+
+.header-button:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+
+.header-button:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

@@ -1,0 +1,20 @@
+<div class="navbar">
+  <div class="row">
+    <div class="col-9 name-container">
+      <span class="name" 
+      (mouseenter)="nameMouseEnter()" 
+      (mouseleave)="nameMouseLeave()">
+        SHARATH
+      </span>
+      <span class="name" *ngIf="!nameHidden">CHANDRA</span>
+      <span class="name" *ngIf="!nameHidden">NIRMALA</span>
+    </div>
+    <div class="col-3 header header-buttons-div">
+      <div class="header-buttons">
+        <label class="header-button" (click)="homeButton()">HOME</label>
+        <label class="header-button" (click)="projectsButton()">PROJECTS</label>
+        <label class="header-button">CONTACT</label>
+      </div>
+    </div>
+  </div>
+</div>
