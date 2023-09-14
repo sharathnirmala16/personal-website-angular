@@ -1,14 +1,18 @@
-.row {
-  display: flex-wrap;
+.col-div {
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
-.col-div {
-  text-align: center;
+.img-div {
+  display: block;
 }
 
 .main-text {
   font-size: 4rem;
   font-weight: 200;
+  padding: 0rem 2rem;
+  text-align: left;
 }
 
 .profile-photo {

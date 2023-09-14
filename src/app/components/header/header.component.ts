@@ -1,30 +1,34 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  showFullName: boolean = false;
 
-  nameHidden = true;
+  constructor(private router: Router) {}
 
-  constructor (private router: Router) { }
-
-  homeButton() {
+  homeButton(): void {
     this.router.navigate(['']);
   }
 
-  projectsButton() {
-    this.router.navigate(['projects']);
+  projectsButton(): void {
+    this.router.navigate(['work']);
   }
 
-  nameMouseEnter() {
-    this.nameHidden = false;
+  contactButton(): void {
+    this.router.navigate(['contact']);
   }
 
-  nameMouseLeave() {
-    this.nameHidden = true;
+  nameMouseEnter(): void {
+    this.showFullName = true;
+  }
+
+  nameMouseLeave(): void {
+    this.showFullName = false;
   }
 }

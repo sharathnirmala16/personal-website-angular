@@ -1,0 +1,85 @@
+.container-mod {
+  flex-direction: column;
+}
+
+.main-heading {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 1.75rem;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  text-align: left;
+}
+
+.experience {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  display: flex;
+}
+
+.exp-body {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.exp-heading {
+  display: block;
+  height: 2rem;
+}
+
+.exp-title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  float: left;
+}
+
+.exp-datetime {
+  font-size: 1.25rem;
+  font-weight: lighter;
+  float: right;
+}
+
+.exp-location {
+  font-size: 1.25rem;
+  font-weight: lighter;
+  font-style: italic;
+  float: right;
+}
+
+.exp-description {
+  font-weight: lighter;
+  text-align: left;
+  float: left;
+}
+
+.exp-skills {
+  display: flex;
+  width: 100%;
+}
+
+.exp-picture {
+  width: 17.5%;
+}
+
+.exp-image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+  float: right;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+#separator {
+  font-size: 1.25rem;
+  font-weight: lighter;
+  float: right;
+  padding: 0rem 0.5rem;
+}

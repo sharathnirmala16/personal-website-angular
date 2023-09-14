@@ -1,0 +1,33 @@
+<div class="outer-container container-mod">
+  <div class="row">
+    <label class="main-heading">EXPERIENCES</label>
+    <div class="work-list">
+      <div class="experience" *ngFor="let experience of experiences">
+        <div class="exp-body">
+          <div class="exp-heading">
+            <label class="exp-title">{{ experience.title }}</label>
+            <label class="exp-location">{{ experience.location }}</label>
+            <label id="separator"> | </label>
+            <label class="exp-datetime">{{ experience.datetime }}</label>
+          </div>
+          <div
+            class="exp-description"
+            [innerText]="experience.description"
+          ></div>
+          <div class="exp-skills">
+            <label>Skills:</label>
+            <div class="exp-skill" *ngFor="let skill of experience.skills">
+              {{ skill }}
+            </div>
+          </div>
+        </div>
+        <div class="exp-picture">
+          <img [src]="experience.imageUrl" alt="image" class="exp-image" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <label class="main-heading">PROJECTS</label>
+  </div>
+</div>
