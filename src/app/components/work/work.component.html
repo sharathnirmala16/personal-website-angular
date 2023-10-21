@@ -1,33 +1,69 @@
 <div class="outer-container container-mod">
-  <div class="row">
-    <label class="main-heading">EXPERIENCES</label>
-    <div class="work-list">
-      <div class="experience" *ngFor="let experience of experiences">
-        <div class="exp-body">
-          <div class="exp-heading">
-            <label class="exp-title">{{ experience.title }}</label>
-            <label class="exp-location">{{ experience.location }}</label>
-            <label id="separator"> | </label>
-            <label class="exp-datetime">{{ experience.datetime }}</label>
-          </div>
-          <div
-            class="exp-description"
-            [innerText]="experience.description"
-          ></div>
-          <div class="exp-skills">
-            <label>Skills:</label>
-            <div class="exp-skill" *ngFor="let skill of experience.skills">
-              {{ skill }}
+  <div class="shifted-container" #shiftedContainer>
+    <div class="row">
+      <label class="main-heading">EXPERIENCE</label>
+      <div class="work-list">
+        <div
+          class="experience fade-in-top"
+          *ngFor="let experience of experiences"
+        >
+          <div class="exp-body" (click)="experienceClick(experience)">
+            <div class="exp-heading">
+              <label class="exp-title">{{ experience.title }}</label>
+              <label class="exp-location">{{ experience.location }}</label>
+              <label id="separator"> | </label>
+              <label class="exp-datetime">{{ experience.datetime }}</label>
+            </div>
+            <div
+              class="exp-description"
+              [innerText]="experience.description"
+            ></div>
+            <div class="skills-images">
+              <img
+                src="{{ skillToImage(skill) }}"
+                alt="{{ skill }}"
+                *ngFor="let skill of experience.skills"
+                class="skill-image"
+                [matTooltip]="skill"
+              />
             </div>
           </div>
-        </div>
-        <div class="exp-picture">
-          <img [src]="experience.imageUrl" alt="image" class="exp-image" />
+          <div class="exp-picture">
+            <img [src]="experience.imageUrl" alt="image" class="exp-image" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <label class="main-heading">PROJECTS</label>
+    <div class="row">
+      <label class="main-heading">PROJECTS</label>
+      <div class="experience-list">
+        <div class="experience fade-in-top" *ngFor="let project of projects">
+          <div class="exp-body" (click)="experienceClick(project)">
+            <div class="exp-heading">
+              <label class="exp-title">{{ project.title }}</label>
+              <label class="exp-location">{{ project.location }}</label>
+              <label id="separator"> | </label>
+              <label class="exp-datetime">{{ project.datetime }}</label>
+            </div>
+            <div
+              class="exp-description"
+              [innerText]="project.description"
+            ></div>
+            <div class="skills-images">
+              <img
+                src="{{ skillToImage(skill) }}"
+                alt="{{ skill }}"
+                *ngFor="let skill of project.skills"
+                class="skill-image"
+                [matTooltip]="skill"
+              />
+            </div>
+          </div>
+          <div class="exp-picture">
+            <img [src]="project.imageUrl" alt="image" class="exp-image" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

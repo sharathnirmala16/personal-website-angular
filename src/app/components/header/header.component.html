@@ -1,10 +1,11 @@
-<div class="navbar">
+<div class="navbar" #navBar>
   <div class="row">
     <div class="col-9 name-container">
       <span
         class="name"
         (mouseenter)="nameMouseEnter()"
         (mouseleave)="nameMouseLeave()"
+        (click)="downloadResume()"
       >
         SHARATH
       </span>
