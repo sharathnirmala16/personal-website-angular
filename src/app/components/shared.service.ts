@@ -67,7 +67,7 @@ export class SharedService {
         'https://github.com/sharathnirmala16/Forex-Algorithmic-Trading-System-MT5',
         'Mysuru, India',
         'Feb 2023 - Jun 2023',
-        '../../assets/images/forex-logo.png'
+        'assets/images/forex-logo.png'
       ),
       new Work(
         'Ampere',
@@ -82,7 +82,7 @@ export class SharedService {
         'https://github.com/sharathnirmala16/Ampere',
         'Mysuru, India',
         'Apr 2022 - Jul 2022',
-        '../../assets/images/ampere-logo.png'
+        'assets/images/ampere-logo.png'
       ),
       new Work(
         'Tomato Leaf Disease Detector',
@@ -91,7 +91,7 @@ export class SharedService {
         'https://github.com/sharathnirmala16/TomatoLeafDiseaseDetector',
         'Mysuru, India',
         'Jan 2022 - Mar 2022',
-        '../../assets/images/tomato-disease-logo.png'
+        'assets/images/tomato-disease-logo.png'
       ),
     ];
   }

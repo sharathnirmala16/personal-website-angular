@@ -49,6 +49,6 @@ export class WorkComponent implements AfterViewInit {
       .replaceAll(' ', '-')
       .replaceAll('#', 'sharp')
       .replaceAll('.', 'dot');
-    return `../../assets/images/skills/${name}-logo.png`;
+    return `assets/images/skills/${name}-logo.png`;
   }
 }
