@@ -31,7 +31,6 @@ export class WorkComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     const height = this.sharedService.getHeaderHeight();
-    console.log(842 / window.innerHeight);
     this.renderer.setStyle(
       this.shiftedContainer.nativeElement,
       'margin-top',
