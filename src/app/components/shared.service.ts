@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ContactDetails } from '../models/contact-details';
 import { Work } from '../models/work';
+import { Skill } from '../models/skill';
 
 @Injectable({
   providedIn: 'root',
@@ -102,5 +103,29 @@ export class SharedService {
 
   getHeaderHeight(): number {
     return this.headerHeight;
+  }
+
+  // getSkills(): Skill[] {
+  //   return [
+  //     new Skill(
+  //       'Python',
+  //       100,
+  //       'I use Python for its simiplicity and productivity.',
+  //       [new Skill('NumPy', 75, '', []), new Skill('Pandas', 85, '', [])]
+  //     ),
+  //   ];
+  // }
+
+  getSkills(): string[] {
+    return [
+      'C++',
+      'FastAPI',
+      'HTML5',
+      'CSS',
+      'Scikit-Learn',
+      'MySQL',
+      'PostgreSQL',
+      'Java',
+    ];
   }
 }

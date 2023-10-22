@@ -8,6 +8,7 @@ import {
 import { Work } from 'src/app/models/work';
 import { SharedService } from '../shared.service';
 import { share } from 'rxjs';
+import { Skill } from 'src/app/models/skill';
 
 @Component({
   selector: 'app-work',
@@ -17,6 +18,7 @@ import { share } from 'rxjs';
 export class WorkComponent implements AfterViewInit {
   experiences!: Work[];
   projects!: Work[];
+  skills!: string[];
 
   @ViewChild('shiftedContainer', { read: ElementRef })
   shiftedContainer!: ElementRef;
@@ -27,6 +29,7 @@ export class WorkComponent implements AfterViewInit {
   ) {
     this.experiences = sharedService.getWorkDetails();
     this.projects = sharedService.getProjectDetails();
+    this.skills = this.sharedService.getSkills();
   }
 
   ngAfterViewInit(): void {
@@ -34,7 +37,7 @@ export class WorkComponent implements AfterViewInit {
     this.renderer.setStyle(
       this.shiftedContainer.nativeElement,
       'margin-top',
-      `${height * (7 * (842 / window.innerHeight))}px`
+      `${height * (11 * (842 / window.innerHeight))}px`
     );
   }
 

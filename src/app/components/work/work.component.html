@@ -1,7 +1,7 @@
 <div class="outer-container container-mod">
   <div class="shifted-container" #shiftedContainer>
     <div class="row">
-      <label class="main-heading">EXPERIENCE</label>
+      <label class="main-heading fade-in-top">EXPERIENCE</label>
       <div class="work-list">
         <div
           class="experience fade-in-top"
@@ -35,7 +35,7 @@
       </div>
     </div>
     <div class="row">
-      <label class="main-heading">PROJECTS</label>
+      <label class="main-heading fade-in-top">PROJECTS</label>
       <div class="experience-list">
         <div class="experience fade-in-top" *ngFor="let project of projects">
           <div class="exp-body" (click)="experienceClick(project)">
@@ -63,6 +63,18 @@
             <img [src]="project.imageUrl" alt="image" class="exp-image" />
           </div>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <label class="main-heading fade-in-top">ADDITIONAL SKILLS</label>
+      <div class="skill-list">
+        <img
+          src="{{ skillToImage(skill) }}"
+          alt="{{ skill }}"
+          *ngFor="let skill of skills"
+          class="add-skill-image"
+          [matTooltip]="skill"
+        />
       </div>
     </div>
   </div>
