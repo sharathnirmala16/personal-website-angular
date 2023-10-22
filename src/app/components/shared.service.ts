@@ -19,19 +19,19 @@ export class SharedService {
         'Gmail',
         'mail.google.com',
         'sharathnimala@gmail.com',
-        '../../assets/images/gmail-logo.png'
+        'assets/images/gmail-logo.png'
       ),
       new ContactDetails(
         'LinkedIn',
         'https://www.linkedin.com/in/snirmala20/',
         'Sharath Nirmala',
-        '../../assets/images/linkedin-logo.png'
+        'assets/images/linkedin-logo.png'
       ),
       new ContactDetails(
         'GitHub',
         'https://github.com/sharathnirmala16',
         'sharathnirmala16',
-        '../../assets/images/github-logo.png'
+        'assets/images/github-logo.png'
       ),
     ];
   }
@@ -45,7 +45,7 @@ export class SharedService {
         'https://drive.google.com/file/d/16KE-_qQZtTc6VuFVvKDa3UYMs-t8iwGp/view?usp=share_link',
         'Bengaluru, India',
         'Jul 2023 - Sep 2023',
-        '../../assets/images/fidelity-logo.png'
+        'assets/images/fidelity-logo.png'
       ),
     ];
   }
